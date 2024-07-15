@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 mongoose.connect(
-  "mongodb+srv://risshh18:Rishabh1234@cluster0.5ls5cab.mongodb.net/ExpenseMonitor"
+  "mongodb+srv://risshh18:Rishabh12@cluster0.5ls5cab.mongodb.net/ExpenseMonitor"
 );
 
 const expenseSchema = new mongoose.Schema({
