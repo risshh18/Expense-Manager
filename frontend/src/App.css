@@ -1,0 +1,14 @@
+.Nav-items{
+  display: flex;
+  gap: 2rem;
+  list-style-type: none; 
+  height: 3rem;
+  align-items: center;
+  background-color: darksalmon;
+  margin-top: 0px;
+}
+.nav-links{
+  text-decoration: none;
+  color:gray;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
