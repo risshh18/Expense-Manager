@@ -1,0 +1,19 @@
+.entries {
+  background-color: rgb(209, 160, 255);
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  margin-left: 25rem;
+  margin-right: 25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.Amount {
+  padding-right: 2.5rem;
+}
+.edit {
+  display: flex;
+  gap: 1.3rem;
+}
