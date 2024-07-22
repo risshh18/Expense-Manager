@@ -1,86 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import "./Navbar.css"
 
-const Navbar = () => {
+function nav() {
   return (
-    <div>
-      <nav
-        style={{ backgroundColor: "blueviolet" }}
-        className="navbar navbar-expand-lg "
-      >
-        <div className="container-fluid">
-          <Link
-            style={{
-              color: "aliceblue",
-              fontWeight: "bold",
-              fontFamily: "sans-serif",
-            }}
-            className="navbar-brand"
-            to="/home"
-          >
-            Finance Manager
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul
-              className="navbar-nav me-auto"
-              style={{ display: "flex", gap: "2rem", paddingLeft: "3rem" }}
-            >
-              <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  style={{
-                    color: "aliceblue",
-                    fontWeight: "bold",
-                    fontFamily: "sans-serif",
-                  }}
-                  aria-current="page"
-                  to="/personal"
-                >
-                  Personal
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  style={{
-                    color: "aliceblue",
-                    fontWeight: "bold",
-                    fontFamily: "sans-serif",
-                  }}
-                  to="/friends"
-                >
-                  Friends
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  style={{
-                    color: "aliceblue",
-                    fontWeight: "bold",
-                    fontFamily: "sans-serif",
-                  }}
-                  to="/groups"
-                >
-                  Groups
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+    <>
+      <Navbar>
+        <Container className="container" style={{"margin":"0%"}}>
+          <Navbar.Brand href="/home"  style={{"color" : "aliceblue", "fontSize":"1.5rem"}}>Finance Manager</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link style={{"color" : "aliceblue"}} href="/personal">Personal</Nav.Link>
+            <Nav.Link style={{"color" : "aliceblue"}} href="/friends">Friends</Nav.Link>
+            <Nav.Link style={{"color" : "aliceblue"}} href="/group">Groups</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+    </>
   );
-};
-export default Navbar;
+}
+
+export default nav;
